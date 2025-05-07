@@ -37,15 +37,15 @@ function Footer() {
                 ))}
               </li>
             </ul>
-            <div>
+
+            <ul className="list_item">
               <h5>Company</h5>
-              <ul className="list_item">
-                <li className="footer_list_item footer_para">Vision</li>
-                <li className="footer_list_item footer_para">Mission</li>
-                <li className="footer_list_item footer_para"> Values</li>
-                <li className="footer_list_item footer_para">Terms</li>
-              </ul>
-            </div>
+              <li className=" footer_para">Vision</li>
+              <li className=" footer_para">Mission</li>
+              <li className=" footer_para"> Values</li>
+              <li className=" footer_para">Terms</li>
+              <li className=" footer_para">Trust</li>
+            </ul>
           </div>
         </div>
       </footer>

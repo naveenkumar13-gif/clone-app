@@ -4,7 +4,7 @@ import { WhyWeCard } from "../../data";
 
 function WhyWe() {
   return (
-    <div className="features">
+    <div className="features" id="Feature">
       <div className="titles">
         <h2 className="heading">Why Choose TSquaredC</h2>
         <p className="description">

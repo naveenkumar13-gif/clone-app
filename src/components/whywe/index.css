@@ -12,7 +12,9 @@
   -webkit-text-fill-color: transparent;
   line-height: 1.1;
 }
-
+h4 {
+  margin: 0;
+}
 .description {
   font-size: 16px;
   color: rgb(144 157 193 / var(--tw-text-opacity, 1));
@@ -26,6 +28,7 @@
 }
 .whywe_card_title {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
 }
 .whywe_description {
@@ -41,7 +44,10 @@
   padding: 1.5rem;
   background: url("../../assets/images/bg.png") no-repeat center;
 }
-
+.whywe_card_icon {
+  width: 24px;
+  height: 24px;
+}
 .whywe_card_img {
   width: 100%;
 }

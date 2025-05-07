@@ -4,7 +4,7 @@ import { contactCard } from "../../data";
 
 function Contact() {
   return (
-    <div className="contact_section" id="contact">
+    <div className="contact_section" id="Contact">
       <div class="container">
         <div class="form-wrapper">
           <div class="form-header">

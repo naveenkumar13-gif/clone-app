@@ -38,10 +38,10 @@ import tsbridge from "../assets/images/ts-bridge-logo.svg";
 
 export const LINKS = [
   { href: "#Home", label: "Home" },
-  { href: "#about", label: "About" },
+  { href: "#About", label: "About" },
   { href: "#Solution", label: "Solution" },
   { href: "#Feature", label: "Feature" },
-  { href: "#contact", label: "Contact" },
+  { href: "#Contact", label: "Contact" },
 ];
 export const COMPANY_LOGOS = [
   { src: tsbridge, alt: "TS Bridge Logo" },

@@ -23,7 +23,7 @@ function Hero() {
           </a>
           <div className="company">
             <p>TRUSTED BY THE BEST</p>
-            <d iv className="company_logo">
+            <div className="company_logo">
               {COMPANY_LOGOS.map((logos, index) => (
                 <img
                   src={logos.src}
@@ -32,16 +32,16 @@ function Hero() {
                   key={index}
                 />
               ))}
-            </d>
+            </div>
           </div>
         </div>
         <div class="hero_rotate_wrapper">
-          <div class="hero_rotate_container">
+          {/* <div class="hero_rotate_container">
             <img src={hero1} alt="hero_img" className="hero_img" />
             <img src={hero2} alt="hero_img" className="hero_img" />
             <img src={hero3} alt="hero_img" className="hero_img" />
             <img src={hero4} alt="hero_img" className="hero_img" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

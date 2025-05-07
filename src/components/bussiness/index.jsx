@@ -4,7 +4,7 @@ import { businessCards } from "../../data";
 
 function Bussiness() {
   return (
-    <div className="features">
+    <div className="features" id="Solution">
       <div className="titles">
         <h2 className="heading">
           Choose Your Solution <br />
