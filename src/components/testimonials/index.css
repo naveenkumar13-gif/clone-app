@@ -1,0 +1,27 @@
+.testimonial_container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+
+.testimonial_card {
+  background-image: url("../../assets/images/bgg.png");
+  border-radius: 10px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+.testimonial_description {
+  font-size: 15px;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}
+.testimonial_name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+.testimonial_company {
+  color: #c7c9d1;
+}

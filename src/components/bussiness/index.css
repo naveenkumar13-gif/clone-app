@@ -1,0 +1,41 @@
+.business_container {
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.business_card {
+  border-radius: 10px;
+  border: #374151 1px solid;
+}
+.business_img {
+  width: 100%;
+  height: 200px;
+}
+.business_card_content {
+  padding: 1.5rem;
+}
+.business_card_title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.business_description {
+  line-height: 1.7;
+  color: rgb(144 157 193 / var(--tw-text-opacity, 1));
+}
+.business_btn {
+  font-size: 14px;
+  background-color: #1d4ed8;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-top: 20px;
+  transition: all 1s;
+  cursor: pointer;
+}
+.business_btn:hover {
+  background-color: #0b43a3;
+}
