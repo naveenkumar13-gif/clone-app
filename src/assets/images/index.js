@@ -20,14 +20,36 @@ import img1 from "../images/card1.webp";
 import img2 from "../images/card2.webp";
 import img3 from "../images/card3.webp";
 import img4 from "../images/card4.webp";
-import bussiniess1 from "../images/image.webp";
+import bussiniess1 from "../images/busssiness2.webp";
 import bussiniess2 from "../images/business1.webp";
 import testmonialcard from "../images/bgg.png";
 import loaction from "../images/location.webp";
 import mail from "../images/mail.webp";
 import audio from "../images/audio.webp";
 import linkedin from "../images/linkedin.svg";
+import about1 from "../images/image.webp";
+import about2 from "../images/image (1).webp";
+import person1 from "../images/person1.webp";
+import person2 from "../images/person(2).webp";
+import person3 from "../images/person (3).webp";
+import team1 from "../images/team1.webp";
+import team2 from "../images/team2).webp";
+import team3 from "../images/team (3).webp";
+import team4 from "../images/team (4).webp";
+import team5 from "../images/team(5).webp";
+import team6 from "../images/team (6).webp";
 export {
+  about1,
+  about2,
+  person1,
+  person2,
+  person3,
+  team1,
+  team2,
+  team3,
+  team4,
+  team5,
+  team6,
   linkedin,
   loaction,
   mail,
