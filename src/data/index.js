@@ -28,7 +28,6 @@ import {
   team4,
   team5,
   team6,
-  
 } from "../assets/images";
 
 import kenaImages from "../assets/images/ken42-logo-1-final.svg";
@@ -38,7 +37,7 @@ import tsbridge from "../assets/images/ts-bridge-logo.svg";
 
 export const LINKS = [
   { href: "#Home", label: "Home" },
-  { href: "#About", label: "About" },
+  { href: "/about", label: "About" },
   { href: "#Solution", label: "Solution" },
   { href: "#Feature", label: "Feature" },
   { href: "#Contact", label: "Contact" },
