@@ -41,9 +41,6 @@ import team6 from "../images/team (6).webp";
 export {
   about1,
   about2,
-  person1,
-  person2,
-  person3,
   team1,
   team2,
   team3,
@@ -79,4 +76,7 @@ export {
   bussiniess1,
   bussiniess2,
   testmonialcard,
+  person1,
+  person2,
+  person3,
 };

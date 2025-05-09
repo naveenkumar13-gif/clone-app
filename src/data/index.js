@@ -28,6 +28,7 @@ import {
   team4,
   team5,
   team6,
+  person3,
 } from "../assets/images";
 
 import kenaImages from "../assets/images/ken42-logo-1-final.svg";
@@ -199,7 +200,7 @@ export const about_section = [
     heading: "What we want   to achieve",
     description:
       "At T2C, our goal is to redefine the boundaries of what technology can do for businesses globally. We are dedicated to crafting solutions that combine not only innovative but also robust enough to handle the dynamic needs of modern enterprises. We focus on seamless integration and strategic innovation, so your business can operate more efficiently and grow without limits.",
-    scr: about1,
+    src: about1,
     alt: "about_img",
   },
   {
@@ -207,7 +208,7 @@ export const about_section = [
     heading: "Why that's importantto us",
     description:
       "Our mission at T2C is to empower businesses to excel in a digital-first world. We're passionate about making complex systems simple and accessible to solve complex challenges and unlock new opportunities. This belief drives us to deliver high-performance, scalable solutions that prioritize customer success. At T2C, we create value that contributes to sustainable, long-term growth for every partner we serve.",
-    scr: about2,
+    src: about2,
     alt: "about_img",
   },
 ];
@@ -217,60 +218,60 @@ export const advisor = [
     name: "Venkat Raju",
     description:
       "Venkat Raju brings deep expertise in programming, data communications, service delivery, and product development at global tech and telecom firms. He is well versed with digital transformation, technology architecture, innovation, and value-added network solutions across industries.",
-    scr: person1,
+    src: person1,
     alt: "Person_img",
   },
   {
     name: "Ganesh Raju K",
     description:
-      "Ganesh Raju’s keen interest in technology drives his efforts to foster innovation and support aspiring entrepreneurs. With nearly two decades of experience at PwC India, he brings strategic depth to advancing tech-driven solutions. His commitment to continuous learning shapes the future of entrepreneurship and education.        ",
-    scr: person2,
+      "Ganesh Raju’s keen interest in technology drives his efforts to foster innovation and support aspiring entrepreneurs. With nearly two decades of experience at PwC India, he brings strategic depth to advancing tech-driven solutions. His commitment to continuous learning shapes .",
+    src: person2,
     alt: "Person_img",
   },
   {
     name: "Rajagopal Koushik",
     description:
-      "Koushik Rajagopal is a technology-driven leader with 15+ years of expertise in IT infrastructure, information security, and disaster recovery. His innovative approach ensures smooth business continuity and operational excellence.",
-    scr: person1,
+      "Koushik Rajagopal is a technology-driven leader with 15+ years of expertise in IT infrastructure, information security, and disaster recovery. His innovative approach ensures smooth business continuity and operational excellence for the future of entrepreneurship and education",
+    src: person3,
     alt: "Person_img",
   },
 ];
 
-export const Team = [
+export const team = [
   {
     name: "Rajagopal Koushik",
     role: "Product Lead",
-    scr: team1,
+    src: team1,
     alt: "team_img",
   },
   {
     name: "Ravindra Pai",
     role: "Vice President",
-    scr: team2,
+    src: team2,
     alt: "team_img",
   },
   {
     name: "Gokul Sundar",
     role: "Solution Architect",
-    scr: team3,
+    src: team3,
     alt: "team_img",
   },
   {
     name: "Jeevankur Talukdar",
     role: "AI Lead",
-    scr: team4,
+    src: team4,
     alt: "team_img",
   },
   {
     name: "Raktim Bharatee",
     role: "Senior Tech Lead",
-    scr: team5,
+    src: team5,
     alt: "team_img",
   },
   {
     name: "Govardhana Kemmathirumar ",
     role: "Salesforce Lead",
-    scr: team6,
+    src: team6,
     alt: "team_img",
   },
 ];
