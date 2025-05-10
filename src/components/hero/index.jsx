@@ -36,12 +36,12 @@ function Hero() {
           </div>
         </div>
         <div class="hero_rotate_wrapper">
-          {/* <div class="hero_rotate_container">
+          <div class="hero_rotate_container">
             <img src={hero1} alt="hero_img" className="hero_img" />
             <img src={hero2} alt="hero_img" className="hero_img" />
             <img src={hero3} alt="hero_img" className="hero_img" />
             <img src={hero4} alt="hero_img" className="hero_img" />
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
