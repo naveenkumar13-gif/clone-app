@@ -63,24 +63,25 @@ function NavBar() {
           )}
         </li>
       </ul>
-
-      {isopen && (
-        <ul className="mobile_screen">
-          <li className=" mobile_links">
-            {LINKS.map((link, index) => (
-              <a
-                href={link.href}
-                key={index}
-                className="nav-links"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
-            <button className="mobile_btn">Get Started</button>
-          </li>
-        </ul>
-      )}
+      <div className="mobile_nav">
+        {isopen && (
+          <ul className="mobile_screen">
+            <li className=" mobile_links">
+              {LINKS.map((link, index) => (
+                <a
+                  href={link.href}
+                  key={index}
+                  className="nav-links"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ))}
+              <button className="mobile_btn">Get Started</button>
+            </li>
+          </ul>
+        )}
+      </div>
     </div>
   );
 }

@@ -22,11 +22,11 @@
   justify-content: center;
 }
 
-h1 {
+/* h1 {
   margin-bottom: 6rem;
   margin-top: 23vh;
   font-size: 5rem;
-}
+} */
 .layout_section {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
