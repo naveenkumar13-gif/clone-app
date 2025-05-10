@@ -3,11 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.section {
-  width: 83%;
-  margin: 0 auto;
-  align-items: center;
-}
+
 .team_container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -21,7 +17,7 @@
   margin: 0 auto;
   height: 400px;
 }
-                
+
 .team_info {
   display: flex;
   flex-direction: column;
