@@ -17,14 +17,14 @@ function Layout() {
       <main className="main section ">
         <Hero />
         <Action />
-        {/* <Feature /> *
+        <Feature />
         <About />
         <WhyWe />
         <Bussiness />
         <Testimonials />
-        <Contact /> */}
+        <Contact />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

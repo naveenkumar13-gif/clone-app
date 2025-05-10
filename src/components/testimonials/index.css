@@ -1,7 +1,28 @@
+/* Base Styles */
+.testimonials {
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(90deg, #f5fbf3 0%, #99d2ff 100%, #5ca9f9 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+/* Desktop Grid */
 .testimonial_container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .testimonial_card {
@@ -11,17 +32,99 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2rem;
+  height: 100%;
 }
+
 .testimonial_description {
   font-size: 15px;
   margin-bottom: 3rem;
   line-height: 1.7;
+  color: #e5e7eb;
 }
+
 .testimonial_name {
   font-size: 14px;
   font-weight: 600;
   color: #fff;
+  margin-bottom: 0.25rem;
 }
+
 .testimonial_company {
   color: #c7c9d1;
+  font-size: 13px;
+}
+
+/* Swiper Carousel Styles */
+.testimonial_swiper {
+  padding: 0 1rem 2rem;
+}
+
+.testimonial_swiper .swiper-slide {
+  height: auto;
+  padding: 0.5rem;
+}
+
+.testimonial_swiper .swiper-pagination-bullet {
+  background: #99d2ff;
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+}
+
+.testimonial_swiper .swiper-pagination-bullet-active {
+  background: #1d4ed8;
+  opacity: 1;
+}
+
+/* Responsive Behavior */
+.testimonial_mobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .testimonial_container {
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .testimonial_card {
+    padding: 1.75rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial_desktop {
+    display: none;
+  }
+
+  .testimonial_mobile {
+    display: block;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .testimonial_description {
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+
+  .testimonial_name {
+    font-size: 15px;
+  }
+
+  .testimonial_company {
+    font-size: 14px;
+  }
 }

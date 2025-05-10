@@ -112,8 +112,11 @@
   .btn {
     margin: 20px auto; /* Center the button */
     display: block; /* Make button block level */
-    width: 100%; /* Set button width */
+    width: 80%; /* Set button width */
     max-width: 400px; /* Maximum button width */
+  }
+  .company_text {
+    display: none;
   }
   .company {
     padding-top: 2rem; /* Reduce top padding */
@@ -168,10 +171,12 @@
 }
 @media (max-width: 480px) {
   .hero_heading {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
+    padding-bottom: 1.3rem;
   }
 
   .hero_para {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }

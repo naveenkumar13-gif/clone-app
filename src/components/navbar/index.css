@@ -2,6 +2,9 @@
   width: 100%;
   z-index: 20;
   position: fixed;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .navbar.scrolled {
   background-color: #070e3b;
@@ -11,12 +14,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0.75rem;
+  padding: 0.75rem 1rem;
 }
 
 .nav-logo {
   width: 100%;
-  height: 100%;
+  height: 40px;
 }
 
 .links {
@@ -40,7 +43,7 @@
   background-color: #1d4ed8;
   padding: 10px 1rem;
   border-radius: 100px;
-  transition: all 1s;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .nav-btn:hover {
@@ -51,8 +54,8 @@
   border: none;
 }
 .icon_menu {
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
 }
 .nav-icon {
   display: none;
@@ -61,14 +64,16 @@
 /* MOBILE SCREEN */
 .mobile_screen {
   position: fixed;
-  top: 25%;
-  right: 25%;
+  top: 20%;
+  right: 10%;
   height: auto;
-  width: 350px;
+  width: 90%;
+  max-width: 350px;
   margin: 0 auto;
   border: 1px solid #fff;
   border-radius: 12px;
   background-color: #010c1d;
+  display: none;
 }
 .mobile_links {
   padding: 30px;
@@ -76,7 +81,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
   border-radius: 0px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -86,9 +90,11 @@ a .mobile_btn {
   background-color: #1d4ed8;
   padding: 10px 1rem;
   border-radius: 100px;
-  transition: all 1s;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
+
+/* Responsive Design */
 @media (max-width: 1024px) {
   .links {
     display: none;
@@ -100,29 +106,44 @@ a .mobile_btn {
 
   .nav-icon {
     display: block;
+    cursor: pointer;
+  }
+
+  .mobile_screen {
+    display: block;
+    right: 5%;
   }
 }
 
 @media (max-width: 768px) {
+  .nav-logo {
+    width: 100%;
+  }
+
   .mobile_screen {
-    display: block;
-    right: 23%;
+    right: 5%;
   }
 }
 
 @media (max-width: 425px) {
   .mobile_screen {
-    right: 17%;
+    right: 5%;
+    width: 95%;
+  }
+
+  .nav {
+    padding: 0.5rem;
+  }
+
+  .nav-logo {
+    height: 60px;
   }
 }
+
 @media (min-width: 1025px) {
   .links {
     display: flex;
   }
-  /* 
-  .nav-btn {
-    display: block;
-  } */
 
   .nav-icon {
     display: none;

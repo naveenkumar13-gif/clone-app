@@ -19,7 +19,7 @@ function Hero() {
           <button className="btn">Let's Build Something Extraordinary </button>
         </a>
         <div className="company">
-          <p>TRUSTED BY THE BEST</p>
+          <p className="company_text">TRUSTED BY THE BEST</p>
           <div className="company_logo">
             {COMPANY_LOGOS.map((logos, index) => (
               <img

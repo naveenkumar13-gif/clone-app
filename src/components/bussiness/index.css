@@ -3,27 +3,38 @@
   gap: 2.5rem;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
+
 .business_card {
   border-radius: 10px;
   border: #374151 1px solid;
+  flex: 1 1 250px; /* Flex grow, shrink, basis - allows cards to grow but not below 300px */
+  min-width: 230px; /* Minimum width before wrapping */
+  max-width: 100%; /* Ensures cards don't overflow container */
 }
+
 .business_img {
   width: 100%;
   height: 200px;
+  object-fit: cover; /* Ensures images maintain aspect ratio */
 }
+
 .business_card_content {
   padding: 1.5rem;
 }
+
 .business_card_title {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
+
 .business_description {
   line-height: 1.7;
   color: rgb(144 157 193 / var(--tw-text-opacity, 1));
 }
+
 .business_btn {
   font-size: 14px;
   background-color: #1d4ed8;
@@ -33,9 +44,47 @@
   outline: none;
   color: #fff;
   margin-top: 20px;
-  transition: all 1s;
+  transition: all 0.3s; /* Changed to 0.3s for faster hover effect */
   cursor: pointer;
 }
+
 .business_btn:hover {
   background-color: #0b43a3;
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 1024px) {
+  .business_container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .business_container {
+    gap: 1.5rem;
+  }
+
+  .business_card {
+    flex: 1 1 250px; /* Adjust basis for medium screens */
+  }
+
+  .business_img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .business_container {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    gap: 1.5rem;
+  }
+
+  .business_card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .business_btn {
+    padding: 0.8rem 1.5rem; /* Slightly smaller button on mobile */
+  }
 }
