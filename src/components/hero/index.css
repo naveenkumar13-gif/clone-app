@@ -11,24 +11,26 @@
   background-size: cover;
   background-color: #000;
   width: 100%;
-  height: 200vh;
+  min-height: 100vh;
 }
+
 .hero {
-  height: calc(100vh - 79px);
+  min-height: calc(100vh - 79px);
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: space-between;
   gap: 2rem;
   align-items: center;
-  padding-top: 6rem;
+  padding: 6rem 2rem 2rem;
 }
 
 .hero_heading {
   padding-top: 4rem;
   font-weight: 600;
   line-height: 1.1;
-  font-size: 3.5rem;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: white;
 }
 
 .gradient {
@@ -37,146 +39,130 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
 }
+
 .hero_para {
   font-size: 1rem;
   font-weight: 300;
   line-height: 2;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 90%;
 }
+
 .btn {
   font-size: 14px;
   background-color: #2d3748;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 100px;
   border: none;
-  outline: none;
   color: #fff;
   margin-top: 20px;
-  transition: all 1s;
+  transition: all 0.3s;
+  cursor: pointer;
 }
+
 .btn:hover {
   background-color: #000;
+  transform: translateY(-2px);
 }
+
 .company {
   padding-top: 7rem;
   display: flex;
   flex-direction: column;
 }
+
 .company_logo {
   margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
+
 .logos {
   width: 120px;
   height: 50px;
+  object-fit: contain;
 }
+
 .hero_right {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
+
 .hero_rotate_wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
+
 .hero_img {
   width: 150px;
+  height: auto;
+  border-radius: 8px;
 }
-@media (max-width: 768px) {
-  .hero-bg {
-    height: auto; /* Adjust height to content */
-  }
 
+@media (max-width: 1024px) {
   .hero {
-    grid-template-columns: 1fr; /* Single column layout */
-    padding-top: 2rem; /* Reduce top padding */
-    height: auto; /* Adjust height to content */
-    gap: 1rem; /* Reduce gap between elements */
+    padding: 4rem 1.5rem;
   }
-
   .hero_heading {
-    font-size: 2rem; /* Reduce font size */
-    padding-top: 1rem; /* Reduce top padding */
-    text-align: center; /* Center align text */
-  }
-
-  .hero_para {
-    text-align: center; /* Center align text */
-    padding: 0 1rem; /* Add some horizontal padding */
-    font-size: 0.9rem; /* Slightly reduce font size */
-  }
-
-  .btn {
-    margin: 20px auto; /* Center the button */
-    display: block; /* Make button block level */
-    width: 80%; /* Set button width */
-    max-width: 400px; /* Maximum button width */
-  }
-  .company_text {
-    display: none;
+    padding-top: 2rem;
   }
   .company {
-    padding-top: 2rem; /* Reduce top padding */
-    align-items: center; /* Center align items */
-    text-align: center; /* Center align text */
-  }
-
-  .company_logo {
-    display: none;
-  }
-
-  .logos {
-    width: 80px; /* Reduce logo size */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .hero_right {
-    grid-template-columns: 1fr; /* Single column layout */
-    margin-top: 2rem; /* Add some top margin */
-    padding: 0 1rem; /* Add horizontal padding */
-  }
-  .hero_left {
-    margin-top: 3rem;
-  }
-
-  .hero_img {
-    width: 100%; /* Make images responsive */
-    max-width: 150px; /* Limit maximum size */
-    margin: 0 auto; /* Center images */
-  }
-
-  /* If you have any specific elements that need to be stacked differently */
-  .hero_rotate_wrapper {
-    justify-content: center; /* Center items */
+    padding-top: 4rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    display: flex;
-    flex-direction: column-reverse;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    text-align: center;
   }
-
-  /* If you want text content above images on mobile */
-  .hero_left {
-    order: 1;
+  .hero_heading {
+    padding-top: 1rem;
+    font-size: 2.5rem;
   }
-
+  .hero_para {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  .btn {
+    margin: 20px auto;
+  }
+  .company {
+    padding-top: 3rem;
+  }
+  .company_logo {
+    justify-content: center;
+    gap: 1.5rem;
+  }
   .hero_right {
-    order: 2;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+  .hero_img {
+    width: 120px;
   }
 }
+
 @media (max-width: 480px) {
   .hero_heading {
-    font-size: 2.3rem;
-    padding-bottom: 1.3rem;
+    font-size: 2rem;
+    padding-bottom: 1rem;
   }
-
   .hero_para {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+  }
+  .logos {
+    width: 80px;
+  }
+  .hero_img {
+    width: 100px;
   }
 }

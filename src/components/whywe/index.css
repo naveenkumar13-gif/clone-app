@@ -1,4 +1,4 @@
-/* WhyWe Section Styles */
+
 .whywe_container {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -20,7 +20,7 @@
   height: 100%;
 }
 
-/* Swiper Carousel Styles */
+
 .whywe_swiper {
   width: 95%;
   margin: 0 auto;

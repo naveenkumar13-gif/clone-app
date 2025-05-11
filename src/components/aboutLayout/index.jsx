@@ -5,7 +5,7 @@ import { about1, about2 } from "../../assets/images";
 function AboutLayout() {
   return (
     <div className="layout_hero section ">
-      <h1>About us</h1>
+      <h1 className="layout_main_heading">About us</h1>
       <div className="layout_hero_content">
         <div className="layout_content">
           <h6 className="layout_title">OUR APPROACH</h6>

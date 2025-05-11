@@ -3,21 +3,27 @@
   gap: 2.5rem;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  flex-wrap: wrap;
 }
 
 .business_card {
   border-radius: 10px;
   border: #374151 1px solid;
-  flex: 1 1 250px; /* Flex grow, shrink, basis - allows cards to grow but not below 300px */
-  min-width: 230px; /* Minimum width before wrapping */
-  max-width: 100%; /* Ensures cards don't overflow container */
+  flex: 1 1 250px;
+  min-width: 230px;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.business_card:hover {
+  transform: translateY(-5px);
 }
 
 .business_img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Ensures images maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .business_card_content {
@@ -25,34 +31,36 @@
 }
 
 .business_card_title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+  color: white;
 }
 
 .business_description {
   line-height: 1.7;
-  color: rgb(144 157 193 / var(--tw-text-opacity, 1));
+  color: rgb(144 157 193);
+  font-size: 0.9rem;
 }
 
 .business_btn {
   font-size: 14px;
   background-color: #1d4ed8;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.8rem;
   border-radius: 100px;
   border: none;
-  outline: none;
   color: #fff;
-  margin-top: 20px;
-  transition: all 0.3s; /* Changed to 0.3s for faster hover effect */
+  margin-top: 1rem;
+  transition: all 0.3s;
   cursor: pointer;
+  display: inline-block;
 }
 
 .business_btn:hover {
   background-color: #0b43a3;
+  transform: translateY(-2px);
 }
 
-/* Media Queries for Responsive Adjustments */
 @media (max-width: 1024px) {
   .business_container {
     gap: 2rem;
@@ -63,11 +71,9 @@
   .business_container {
     gap: 1.5rem;
   }
-
   .business_card {
-    flex: 1 1 250px; /* Adjust basis for medium screens */
+    flex: 1 1 250px;
   }
-
   .business_img {
     height: 180px;
   }
@@ -75,16 +81,14 @@
 
 @media (max-width: 480px) {
   .business_container {
-    flex-direction: column; /* Stack cards vertically on small screens */
+    flex-direction: column;
     gap: 1.5rem;
   }
-
   .business_card {
     width: 90%;
-    margin: 0 auto;
   }
-
   .business_btn {
-    padding: 0.8rem 1.5rem; /* Slightly smaller button on mobile */
+    width: 100%;
+    padding: 0.8rem;
   }
 }

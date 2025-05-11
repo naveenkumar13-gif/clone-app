@@ -5,7 +5,7 @@ import { LINKS } from "../../data";
 
 function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isopen, setIsOpen] = useState(true);
+  const [isopen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {

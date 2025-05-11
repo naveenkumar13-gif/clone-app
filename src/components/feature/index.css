@@ -1,4 +1,4 @@
-/* Base Styles */
+
 .titles {
   font-size: clamp(1.5rem, 4vw, 3.75rem);
 }
@@ -26,7 +26,6 @@
   color: rgb(144 157 193 / var(--tw-text-opacity, 1));
 }
 
-/* Desktop Grid */
 .feature_container {
   display: flex;
   gap: 1.5rem;
@@ -59,7 +58,7 @@
   padding: 1rem 1.25rem;
 }
 
-/* Swiper Carousel */
+
 .feature_swiper {
   width: 100%;
   padding: 0 1rem;
@@ -70,7 +69,7 @@
   padding: 0.5rem;
 }
 
-/* Responsive Behavior */
+
 .feature_mobile {
   display: none;
 }

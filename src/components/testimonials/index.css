@@ -1,4 +1,4 @@
-/* Base Styles */
+
 .testimonials {
   margin: 2rem 0;
   padding: 0 1rem;
@@ -16,7 +16,7 @@
   margin-bottom: 2rem;
 }
 
-/* Desktop Grid */
+
 .testimonial_container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
