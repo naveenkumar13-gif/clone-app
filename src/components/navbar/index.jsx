@@ -2,11 +2,20 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import { logo } from "../../assets/images";
 import { LINKS } from "../../data";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isopen, setIsOpen] = useState(false);
+  const pathname = window.location.pathname;
 
+  const handleNavigation = (href) => {
+    if (href.startsWith("#") && pathname !== "/") {
+      window.location.href = `/${href}`;
+    } else {
+      window.location.href = href;
+    }
+  };
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -18,12 +27,20 @@ function NavBar() {
   return (
     <div className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <ul className="nav section">
-        <li>
+        <Link to="/" className="nav-brand">
           <img src={logo} alt="logo" className="nav-logo" />
-        </li>
+        </Link>
         <li className="links">
           {LINKS.map((link, index) => (
-            <a href={link.href} key={index} className="nav-links">
+            <a
+              href={link.href}
+              key={index}
+              className="nav-links"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavigation(link.href);
+              }}
+            >
               {link.label}
             </a>
           ))}

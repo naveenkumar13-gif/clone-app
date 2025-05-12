@@ -79,11 +79,62 @@
   gap: 1rem;
 }
 .hero_rotate_wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  width: 500px; /* Increased to accommodate gaps */
+  height: 400px;
+  margin: 0 auto;
+  /* Optional: for visibility */
 }
+
 .hero_img {
-  width: 150px;
+  position: absolute;
+  width: 200px;
+  border-radius: 8px;
+  border: 0px solid #aaa; /* Subtle glass border */
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.2); /* Dual shadow for depth */
+  animation: rotateCards 8s infinite ease-in-out;
+  opacity: 0.9;
+
+  /* Glass morphism effect */
+  background: transparent;
+
+  transition: all 0.3s ease;
+}
+
+/* Staggered delays */
+.hero_img:nth-child(1) {
+  animation-delay: 0s;
+}
+.hero_img:nth-child(2) {
+  animation-delay: 2s;
+}
+.hero_img:nth-child(3) {
+  animation-delay: 4s;
+}
+.hero_img:nth-child(4) {
+  animation-delay: 6s;
+}
+
+/* Keyframes with gaps (adjust translateX/Y values) */
+@keyframes rotateCards {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg); /* Top-left */
+    z-index: 1;
+  }
+  25% {
+    transform: translate(calc(100% + 20px), 0) rotate(5deg); /* Top-right (+20px gap) */
+    z-index: 2;
+  }
+  50% {
+    transform: translate(calc(100% + 20px), calc(100% + 20px)) rotate(0deg); /* Bottom-right */
+    z-index: 3;
+  }
+  75% {
+    transform: translate(0, calc(100% + 20px)) rotate(-5deg); /* Bottom-left */
+    z-index: 4;
+  }
 }
 @media (max-width: 768px) {
   .hero-bg {
@@ -150,7 +201,9 @@
 
   /* If you have any specific elements that need to be stacked differently */
   .hero_rotate_wrapper {
-    justify-content: center; /* Center items */
+    justify-content: center;
+
+    width: 350px;
   }
 }
 
