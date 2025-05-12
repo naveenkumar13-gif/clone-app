@@ -4,7 +4,7 @@ import { space } from "../../assets/images";
 
 function About() {
   return (
-    <div className="features">
+    <div className="">
       <div className="about">
         <div className="about_section">
           <h1 className="about_title">About TSquaredC</h1>

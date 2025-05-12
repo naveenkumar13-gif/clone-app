@@ -5,8 +5,8 @@ import { cards } from "../../data";
 function Action() {
   return (
     <div className="action">
-      <div>
-        <h2 className="heading">Innovation in Action</h2>
+      <div className="action_title">
+        <h2 className="action_heading">Innovation in Action</h2>
         <p className="description">
           Solutions crafted to propel industry leaders into the future.
         </p>

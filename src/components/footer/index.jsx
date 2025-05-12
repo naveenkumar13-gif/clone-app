@@ -5,61 +5,83 @@ import { LINKS } from "../../data";
 
 function Footer() {
   return (
-    <div className="fotter_features  ">
-      <footer className="footer_section">
-        <div className="footer_container">
-          <div className="footer_logo">
-            <img src={logo} alt="logo" className="" />
+    <div className="footer_wrapper">
+      <footer className="footer_container">
+        <div className="footer_content">
+          <div className="footer_brand">
+            <img src={logo} alt="logo" className="footer_logo" />
+            <p className="footer_para">
+              Want to build the future with us? <br /> Follow T²C and make an
+              impact!
+            </p>
+            <div className="footer_social">
+              <a href="#" aria-label="LinkedIn">
+                <img src={linkedin} alt="LinkedIn" />
+              </a>
+            </div>
           </div>
-          <p className="footer_para">
-            Want to build the future with us? <br /> Follow T²C and make an
-            impact!
+
+          <div className="footer_links_container">
+            <div className="footer_links_group">
+              <h5 className="footer_heading">Quick Links</h5>
+              <ul className="footer_links_list">
+                {LINKS.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.href} className="footer_link footer_para">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="footer_links_group">
+              <h5 className="footer_heading">Company</h5>
+              <ul className="footer_links_list">
+                <li>
+                  <a href="#" className="footer_link footer_para">
+                    Vision
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="footer_link footer_para">
+                    Mission
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="footer_link footer_para">
+                    Values
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="footer_link footer_para">
+                    Terms
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="footer_link footer_para">
+                    Trust
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer_bottom">
+          <p className="footer_copyright footer_para">
+            © 2024 TSquaredC | All Rights Reserved.
           </p>
-          <div className="footer_social">
-            <a href="#">
-              <img src={linkedin} alt="linkedIn" />
+          <div className="footer_legal">
+            <a href="#" className="footer_legal_link footer_para">
+              Policy Terms
+            </a>
+            <a href="#" className="footer_legal_link footer_para">
+              Terms of Service
             </a>
           </div>
         </div>
-        <div>
-          <div className="footer_links">
-            <ul className="footer_list">
-              <h5>Quick Links</h5>
-              <li className="list_item">
-                {LINKS.map((link, index) => (
-                  <a
-                    href={link.href}
-                    key={index}
-                    className="nav-links footer-link footer_para"
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </li>
-            </ul>
-
-            <ul className="list_item">
-              <h5>Company</h5>
-              <li className=" footer_para">Vision</li>
-              <li className=" footer_para">Mission</li>
-              <li className=" footer_para"> Values</li>
-              <li className=" footer_para">Terms</li>
-              <li className=" footer_para">Trust</li>
-            </ul>
-          </div>
-        </div>
       </footer>
-      <div className="footer_bottom">
-        <p className="footer_para">© 2024 TSquaredC | All Rights Reserved.</p>
-        <div>
-          <a href="#" className=" copyright-link footer_para">
-            policy term
-          </a>
-          <a href="#" className=" copyright-link footer_para">
-            Terms of service
-          </a>
-        </div>
-      </div>
     </div>
   );
 }
